@@ -40,3 +40,9 @@ User can upload employee data by going to a new page. This new page will have a 
 * Readme
 =======
 # mekari_project
+* clone this project with ssh or https
+* bundle install ("gem install bundler" if on gemset not install)
+* Change credential account on database.yml with your mysql account
+* rake db:create
+* rake db:migrate
+* rails s
