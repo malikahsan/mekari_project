@@ -15,7 +15,7 @@
     <% @policies.each do |policy| %>
       <tr>
         <td><%= policy.name %></td>
-        <td><%= policy.company %></td>
+        <td><%= policy.company.name.titleize %></td>
         <td><%= link_to 'Show', policy %></td>
         <td><%= link_to 'Edit', edit_policy_path(policy) %></td>
         <td><%= link_to 'Destroy', policy, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -28,7 +28,8 @@
 
   <div class="field">
     <%= form.label :company_id %>
-    <%= form.text_field :company_id %>
+    <%= collection_select(:employee, :company_id, Company.all, :id, :company_name, prompt: true) %>
+    <%#= form.text_field :company_id %>
   </div>
 
   <div class="actions">
